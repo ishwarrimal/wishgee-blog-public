@@ -1,0 +1,20 @@
+backend:
+  name: gitlab
+  repo: WishGenie/blog-wishgee
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: imageSource, label: Image Source, widget: image }
+      - { name: keywords, label: keywords }
+      - { name: description, lable: description }
+      - { name: body, label: Body, widget: markdown }
